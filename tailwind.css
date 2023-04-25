@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input:focus ~ div > p {
+    @apply -translate-y-7 text-sm text-[#1a73e8];
+  }
+  input:focus ~ div {
+    @apply border-[#1a73e8] border-2
+  }
+}
